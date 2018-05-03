@@ -7,7 +7,7 @@
       "colors" : ["Black", "Red"],
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
-      "price" : 119.99,
+      "price" : 98.00,
       "images" : ["air-max-270.jpg"]
     },
     {
@@ -17,27 +17,27 @@
       "colors" : ["Black", "Red"],
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
-      "price" : 119.99,
+      "price" : 130.00,
       "images" : ["air-force-270.jpg"]
     },
     {
       "name" : "Air Huarache Drift",      
       "description" : "The Nike Air Max 270 Men's Shoe is inspired by two icons of big Air: the Air Max 180 and Air Max 93. It features Nike’s biggest heel Air unit yet for a super-soft ride that feels as impossible as it looks.",
       "brand" : "Nike",
-      "colors" : ["Black", "Red"],
+      "colors" : ["Black", "Red", "Green"],
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
-      "price" : 119.99,
+      "price" : 118.00,
       "images" : ["air-huarache-drift.jpg"]
     },
     {
       "name" : "Air Huarache",      
       "description" : "The Nike Air Max 270 Men's Shoe is inspired by two icons of big Air: the Air Max 180 and Air Max 93. It features Nike’s biggest heel Air unit yet for a super-soft ride that feels as impossible as it looks.",
       "brand" : "Nike",
-      "colors" : ["Black", "Red"],
+      "colors" : ["Yellow"],
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
-      "price" : 119.99,
+      "price" : 78.00,
       "images" : ["air-huarache.jpg"]
     }
   ]
