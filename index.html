@@ -6,56 +6,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Shoes Wanted!</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>	
 </head>
 
 <body>
 
-	<div id="app">{{message}}</div>
-
-	<script>
-		var app = new Vue({
-			el: '#app',
-			data: {
-				message: 'Hello Ken from VueJS'
-			}
-		})
-	</script>
-
-	<section class="section">
-		<div class="container"> 
-			<div class="columns" id="shoes-container"></div>	
-		</div>
-	</section>
-
-	<script id="shoesTemplate" type="text/x-handlebars-template">
-		{{#each shoes}}
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image">
-							<img src="images/{{images.[0]}}" alt="{{brand}} {{name}}" title="{{brand}} {{name}}">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="title is-4">{{name}}</div>
-						<div class="level">
-							<div class="level-left">
-								<div class="level-item">
-									${{price}}
-								</div>
+	<div id="app">	
+		<section class="section">
+			<div class="container"> 
+				<div class="columns">
+					<div class="column" v-for="product in products">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image">
+									<!-- TODO: product concatenate brand and name -->
+									<img src="images/" v-bind:alt="product.name" v-bind:title="product.name">
+								</figure>
 							</div>
-							<div class="level-right">
-								<div class="level-item">{{colors.length}} colors available</div>
+							<div class="card-content">
+								<div class="title is-4">{{ product.name }}</div>
+								<div class="level">
+									<div class="level-left">
+										<div class="level-item">
+											${{ product.price }}
+										</div>
+									</div>
+									<div class="level-right">
+										<div class="level-item"> colors available</div>
+									</div>
+								</div>												
 							</div>
-						</div>												
+						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
-		{{/each}}
-	</script>	
+		</section>
+	</div>
 
 	<footer class="footer">
 		<div class="container">
@@ -67,7 +53,10 @@
 		</div>
 	</footer>
 
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="js/app.js"></script>
+
 </body>
 
 </html>
