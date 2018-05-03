@@ -7,10 +7,22 @@
 	<title>Shoes Wanted!</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 </head>
 
 <body>
+
+	<div id="app">{{message}}</div>
+
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello Ken from VueJS'
+			}
+		})
+	</script>
 
 	<section class="section">
 		<div class="container"> 
