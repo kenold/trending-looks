@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shoes Wanted!</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+</head>
+
+<body>
+
+	<section class="section">
+		<div class="container"> 
+			<div class="columns" id="shoes-container"></div>	
+		</div>
+	</section>
+
+	<script id="shoesTemplate" type="text/x-handlebars-template">
+		{{#each shoes}}
+			<div class="column">
+				<div class="card">
+					<div class="card-image">
+						<figure class="image">
+							<img src="images/{{image}}" alt="{{name}}">
+						</figure>
+					</div>
+					<div class="card-content">
+						<div class="title">{{name}}</div>
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</script>	
+
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>
+					<strong>ShoesWanted!</strong> by <a href="#">Kenold Beauplan</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>
