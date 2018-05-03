@@ -11,7 +11,7 @@
 
 <body>
 
-	<div id="app">	
+	<div id="app">
 		<section class="section">
 			<div class="container"> 
 				<div class="columns">
@@ -19,8 +19,9 @@
 						<div class="card">
 							<div class="card-image">
 								<figure class="image">
-									<!-- TODO: product concatenate brand and name -->
-									<img src="images/" v-bind:alt="product.brand + ' ' + product.name" v-bind:title="product.brand + ' ' + product.name">
+									<img v-bind:src="'images/'+product.images[0]" 
+										v-bind:alt="product.brand + ' ' + product.name" 
+										v-bind:title="product.brand + ' ' + product.name">
 								</figure>
 							</div>
 							<div class="card-content">
@@ -58,5 +59,4 @@
 	<script src="js/app.js"></script>
 
 </body>
-
 </html>
