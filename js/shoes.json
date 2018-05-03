@@ -8,7 +8,7 @@
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
       "price" : 119.99,
-      "image" : "air-max-270.jpg"
+      "images" : ["air-max-270.jpg"]
     },
     {
       "name" : "Air Force 270",      
@@ -18,7 +18,7 @@
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
       "price" : 119.99,
-      "image" : "air-force-270.jpg"
+      "images" : ["air-force-270.jpg"]
     },
     {
       "name" : "Air Huarache Drift",      
@@ -28,7 +28,7 @@
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
       "price" : 119.99,
-      "image" : "air-huarache-drift.jpg"
+      "images" : ["air-huarache-drift.jpg"]
     },
     {
       "name" : "Air Huarache",      
@@ -38,7 +38,7 @@
       "sizes" : ["7", "7.5", "9"],
       "genders" : ["Men", "Women"],
       "price" : 119.99,
-      "image" : "air-huarache.jpg"
+      "images" : ["air-huarache.jpg"]
     }
   ]
 }
