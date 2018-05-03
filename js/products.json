@@ -7,7 +7,7 @@
     "sizes" : ["7", "7.5", "9"],
     "genders" : ["Men", "Women"],
     "price" : 98.00,
-    "images" : ["air-max-270.jpg"]
+    "images" : ["air-max-270.jpg", "air-huarache-drift.jpg"]
   },
   {
     "name" : "Air Force 270",      
