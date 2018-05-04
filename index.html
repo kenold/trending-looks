@@ -15,44 +15,16 @@
 	<div id="app">
 		<section class="section">
 			<div class="container">				
-				<product></product>
+				
 				<div class="columns is-multiline">
-					<template v-for="product in products">
-						<div class="column is-6 is-3-desktop">
-							<div class="card">
-								<div class="card-image">
-									<figure class="image">
-										<img :src="'images/' + product.images[0]" 
-											:alt="product.brand + ' ' + product.name" 
-											:title="product.brand + ' ' + product.name">
-									</figure>
-								</div>
-								<div class="card-content">
-									<div class="subtitle is-6 brand">{{ product.brand | uppercase }}</div>
-									<div class="title is-5">{{ product.name }}</div>
-									<div class="level subtitle is-6">
-										<div class="level-left">
-											<div class="level-item">
-												${{ product.price }}
-											</div>
-										</div>
-										<div class="level-right">
-											<div class="level-item">
-												<ul class="colors">
-													<li v-for="color in product.colors" 
-														class="circle" 
-														:style="[color == 'White' ? {'background':'#E1E1E1'} : {'background': color}]"
-														:title="color">
-													</li>
-												</ul>
-											</div>
-											
-										</div>
-									</div>												
-								</div>
-							</div>
-						</div>
-					</template>
+					<div class="column is-6 is-3-desktop" v-for="product in products"
+						:key="product.id">						
+						<product-list 
+							title="Products List" 
+							:product="product"
+							:products="products">
+						</product-list>
+					</div>					
 				</div>	
 			</div>
 		</section>
@@ -66,11 +38,11 @@
 				</p>
 			</div>
 		</div>
-	</footer>
+	</footer>	
 
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="js/app.js"></script>
+	<script src="app.js"></script>
 
 </body>
 </html>
