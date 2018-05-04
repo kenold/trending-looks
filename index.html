@@ -21,7 +21,7 @@
 							<div class="card">
 								<div class="card-image">
 									<figure class="image">
-										<img :src="'images/'+product.images[0]" 
+										<img :src="'images/' + product.images[0]" 
 											:alt="product.brand + ' ' + product.name" 
 											:title="product.brand + ' ' + product.name">
 									</figure>
@@ -40,7 +40,7 @@
 												<ul class="colors">
 													<li v-for="color in product.colors" 
 														class="circle" 
-														:style="'background:'+color"
+														:style="{ background: color }"
 														:title="color">
 													</li>
 												</ul>
