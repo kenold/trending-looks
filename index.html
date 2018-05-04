@@ -27,23 +27,28 @@
 									</figure>
 								</div>
 								<div class="card-content">
-									<div class="title is-4">{{ product.name }}</div>											
+									<div class="title is-5">{{ product.name }}</div>
+									<div class="level subtitle">
+										<div class="level-left">
+											<div class="level-item">
+												${{ product.price }}
+											</div>
+										</div>
+										<div class="level-right">
+											<div class="level-item">
+												<ul class="colors">
+													<li v-for="color in product.colors" 
+														class="circle" 
+														:style="'background:'+color"
+														:title="color">
+													</li>
+												</ul>
+											</div>
+											
+										</div>
+									</div>												
 								</div>
-								<footer class="card-footer">
-									<p class="card-footer-item">
-									${{ product.price }}
-									</p>
-									<span class="card-footer-item">
-										<ul class="colors">
-											<li v-for="color in product.colors" 
-												class="circle" 
-												:style="'background:'+color"
-												:title="color">
-											</li>
-										</ul>
-									</span>
-								</footer>
-							</div> <!-- /.card -->
+							</div>
 						</div>
 					</template>
 				</div>	
