@@ -3,6 +3,11 @@ const app = new Vue({
     data: {
         products: []
     },
+    filters: {
+        uppercase: function(value) {
+            return value.toUpperCase();
+        }
+    },
     mounted() {
         axios
             .get('js/products.json')
