@@ -40,7 +40,7 @@
 												<ul class="colors">
 													<li v-for="color in product.colors" 
 														class="circle" 
-														:style="{ background: color }"
+														:style="[color == 'White' ? {'background':'#E1E1E1'} : {'background': color}]"
 														:title="color">
 													</li>
 												</ul>
