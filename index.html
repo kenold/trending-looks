@@ -7,6 +7,7 @@
 	<title>Trending Looks</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>	
+	<link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
@@ -35,9 +36,9 @@
 										</div>
 										<div class="level-right">
 											<div class="level-item">
-												<ul>
+												<ul class="colors">
 													<li v-for="color in product.colors" :style="'color:'+color">
-														<i class="fas fa-circle"></i>
+														<i class="fas fa-circle" :title="color"></i>
 													</li>
 												</ul>
 											</div>
