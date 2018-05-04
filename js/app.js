@@ -1,3 +1,12 @@
+Vue.component('product', {
+    data: function() {
+        return {
+            header: "New Comp Header"
+        }
+    },
+    template: '<p>this is a product component</p>'
+})
+
 const app = new Vue({
     el: '#app',
     data: {
