@@ -2,3 +2,11 @@ ul.colors li {
     display: inline;
     margin-right: .2rem;
 }
+
+.colors .circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+}
