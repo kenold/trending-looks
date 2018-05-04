@@ -11,6 +11,8 @@ const app = new Vue({
     mounted() {
         axios
             .get('js/products.json')
-            .then(response => (this.products = response.data))
+            .then(response => {
+                this.products = response.data
+            })            
     }
 })
